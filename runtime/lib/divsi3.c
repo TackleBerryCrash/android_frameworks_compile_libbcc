@@ -33,3 +33,4 @@ __divsi3(si_int a, si_int b)
     s_a ^= s_b;                                  /* sign of quotient */
     return (__udivsi3(a, b) ^ s_a) - s_a;        /* negate if s_a == -1 */
 }
+#endif
